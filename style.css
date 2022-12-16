@@ -490,6 +490,15 @@ main .subtitle {
     margin-right: 55px;
   }
 
+  .home header .search button {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .home header .search button img {
+    width: 20px;
+  }
+
   .home .content div {
     width: initial;
   }
