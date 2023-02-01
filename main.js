@@ -10,9 +10,10 @@ const logo = document.querySelector('.logo')
 menuToggle.addEventListener('click', () => {
   menuSection.classList.toggle('on')
 
-  const isOn = menuSection.classList.contains('on') && search.classList.contains('on')
+  // verifying if it both contains class "on" so that stay in right side
+  const isActive = menuSection.classList.contains('on') && search.classList.contains('on')
   
-  if(isOn) {
+  if(isActive) {
     document.querySelector('header').style.justifyContent = 'end'
   }
 })
@@ -28,7 +29,13 @@ searchBtn.addEventListener('click', () => {
 
   if(window.matchMedia("(max-width:768px)").matches) {
     search.classList.add('on')
+    textInput.focus()
     logo.style.display = 'none'
   }
+})
+
+textInput.addEventListener('blur', () => {
+  search.classList.remove('on')
+  logo.style.display = 'initial'
 })
 
