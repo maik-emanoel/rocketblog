@@ -21,4 +21,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O RocketBlog é um site que simula um blog. <br>
 
-Obs: Projeto construído a partir da área de desafios do Programa Discover da [Rocketseat](https://rocketseat.com.br). Após ter desenvolvido o layout proposto, adicionei novas features, como por exemplo: um layout para dispositivos com telas menores, adicionei uma função no campo pesquisar para que simulasse uma pesquisa e animações.
+Obs: Projeto construído a partir da área de desafios do Programa Discover da [Rocketseat](https://rocketseat.com.br). Após ter desenvolvido o layout proposto, adicionei novas features:
+
+- Tornei o layout responsivo
+- Adicionei algumas animações
+- Criei uma função no campo pesquisar para que simulasse uma pesquisa
