@@ -9,11 +9,9 @@ const logo = document.querySelector('.logo')
 
 menuToggle.addEventListener('click', () => {
   menuSection.classList.toggle('on')
-
-  // verifying if it both contains class "on" so that stay in right side
-  const isActive = menuSection.classList.contains('on') && search.classList.contains('on')
+  const bothAreActive = menuSection.classList.contains('on') && search.classList.contains('on')
   
-  if(isActive) {
+  if(bothAreActive) {
     document.querySelector('header').style.justifyContent = 'end'
   }
 })
