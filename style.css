@@ -105,8 +105,7 @@ a {
 .home .search button {
   width: 7rem;
   border: none;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-radius: 0 4px 4px 0;
 
   background: var(--button-bg);
   cursor: pointer;
@@ -421,9 +420,13 @@ main .subtitle {
 
 @media (max-width: 768px) {
   .home header .search button {
-    width: 5rem;
+    width: 4.4rem;
     border-radius: 50%;
     transition: .3s ease-in-out;
+  }
+
+  .home .content img:nth-child(2) {
+    max-width: none;
   }
 
   .home .search #text {
@@ -433,22 +436,17 @@ main .subtitle {
   /* ============== search on =============== */
   .home .search.on {
     width: 100%;
-    max-width: 30rem;
-
-    margin-right: 50px;
+    margin-right: 70px;
   }
   
   .home .search.on #text{
     display: initial;
     width: 100%;
-    max-width: 23rem;
   }
 
   .home .search.on button {
     max-width: 7rem;
-    border-radius: initial;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-radius: 0 4px 4px 0;
   }
 
   /* ============ main ============= */
@@ -483,13 +481,18 @@ main .subtitle {
     align-items: end;
   }
 
-  .home header .search {
+  .home header .search,
+  .home header .search.on {
     margin-right: 55px;
   }
 
   .home header .search button {
     width: 4rem;
     height: 4rem;
+  }
+  
+  .home header .search.on button {
+    height: 44px;
   }
 
   .home header .search button img {
@@ -525,6 +528,7 @@ main .subtitle {
 }
 
 @media (max-width: 400px) {
+  .home header .search.on,
   .home header .search {
     margin-right: 49px;
   }
